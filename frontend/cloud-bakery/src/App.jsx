@@ -50,7 +50,7 @@ const Root = () => {
 
   //Redirect based on authentication status
   return isAuthenticated ? (
-    <Navigate to="/home" /> 
+    <Navigate to="/login" /> 
   ) : (
     <Navigate to="/login" />
     );
