@@ -18,3 +18,47 @@
     overflow-x:hidden;
   }
 }
+
+.cloud-mask-1 {
+  /* Use the cloud image as a mask */
+  mask-image: var(--cloud-url);
+  -webkit-mask-image: var(--cloud-url);
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  
+  /* The color of the cloud */
+  background-color: white; 
+}
+
+.cloud-mask-2 {
+  /* Use the cloud image as a mask */
+  mask-image: var(--cloud-url);
+  -webkit-mask-image: var(--cloud-url);
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  
+  /* The color of the cloud */
+  background-color: white; 
+}
+
+/* This creates the "Shadow" layer you see in your image */
+.cloud-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.cloud-shadow {
+    position: absolute;
+    top: -10px; /* Offset for the blue shadow */
+    left: 5px;
+    background-color: rgba(209, 227, 248, 0.8); /* The light blue color */
+    z-index: -1;
+}
+
+.input-box{
+    @apply w-full flex justify-between gap-3 text-sm text-black bg-slate-100 rounded px-4 py-3 mb-4 mt-3 border border-slate-200 outline-none;
+}
